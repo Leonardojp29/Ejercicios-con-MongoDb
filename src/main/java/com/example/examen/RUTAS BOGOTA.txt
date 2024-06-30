@@ -1,0 +1,89 @@
+CREAR(POST):	URL: http://localhost:8092/rest/bogota/guardar
+{
+    "OBJECTID": 1,
+    "CODIGO": "11001.1.1.2.2.6.1.3499",
+    "NOMBRE": "Parque Cedro Golf Club",
+    "DIRECCION": "Carrera 7A # 150 - 85",
+    "TIPO_DE_PA": "Patrimonio cultural material inmueble",
+    "ICONOGRAFI": "Atractivo Cultural",
+    "NOMBRE_PRO": "Instituto Distrital de Recreación y Deporte - IDRD",
+    "DIRECCIO_1": "Calle 63 # 59A - 06",
+    "CORREO_PRO": "atncliente@idrd.gov.co",
+    "LATITUD": 4.725616,
+    "LONGITUD": -74.026808,
+    "ID": 3499,
+    "TELEFONO": "5716605400",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -8240626.571599999,
+            526650.6000000015
+        ]
+    }
+}
+
+ACTUALIZAR(PUT):	URL: http://localhost:8092/rest/bogota/actualizar
+{
+    "id": "6675fea4d93a56dec919e5d0",
+    "OBJECTID": 1,
+    "CODIGO": "11001.1.1.2.2.6.1.3499",
+    "NOMBRE": "Parque Cedro Golf Club Modificado",
+    "DIRECCION": "Carrera 7A # 150 - 85",
+    "TIPO_DE_PA": "Patrimonio cultural material inmueble",
+    "ICONOGRAFI": "Atractivo Cultural",
+    "NOMBRE_PRO": "Instituto Distrital de Recreación y Deporte - IDRD",
+    "DIRECCIO_1": "Calle 63 # 59A - 06",
+    "CORREO_PRO": "atncliente@idrd.gov.co",
+    "LATITUD": 4.725616,
+    "LONGITUD": -74.026808,
+    "ID": 3499,
+    "TELEFONO": "5716605400",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -8240626.571599999,
+            526650.6000000015
+        ]
+    }
+}
+
+OBTENER REGISTRO POR ID (GET):	http://localhost:8092/rest/bogota/{id}
+EJEMPLO: http://localhost:8092/rest/bogota/6675fea4d93a56dec919e5d0
+
+
+LISTAR REGISTROS POR NOMBRE ($regex):	http://localhost:8092/rest/bogota/nombreRegex?regex={nombre}
+EJEMPLO: http://localhost:8092/rest/bogota/nombreRegex?regex=Parque
+
+
+ELIMINAR REGISTRO POR ID(DELETE):	localhost:8092/rest/bogota/eliminar/{id}	
+EJEMPLO: http://localhost:8092/rest/bogota/eliminar/6675fea4d93a56dec919e5d0
+
+
+LISTAR REGISTROS POR TIPOS DE PATRIMONIO(GET):	http://localhost:8092/rest/bogota/tipoDePaIn?tiposDePa={tipoDePa1}&tiposDePa={tipoDePa2}
+EJEMPLO: http://localhost:8092/rest/bogota/tipoDePaIn?tiposDePa=Patrimonio%20cultural%20material%20inmueble&tiposDePa=Otro%20tipo
+
+
+LISTAR REGISTROS POR NOMBRE UTILIZANDO ($regex): http://localhost:8092/rest/bogota/nombreRegex?regex={nombre}
+EJEMPLO: http://localhost:8092/rest/bogota/nombreRegex?regex=Cedro
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
